@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/payBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_backg" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_justview"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#00000000"
+            android:onClick="exit" />
+
+        <ImageView
+            android:id="@+id/iv_circle_top"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/bg_top_circle" />
+
+        <LinearLayout
+            android:id="@+id/ll_other_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_other_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:gravity="center"
+                    android:text="订单编号"
+                    android:textColor="#FF565A66"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_other_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="C2017081111124569747  "
+                    android:textColor="#FF565A66"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/iv_circle_top"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="162dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_arrow_down2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFF4F4F4" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:progressDrawable="@drawable/progress_bg"
+            android:visibility="visible" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/progressBar"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
